@@ -1,0 +1,398 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 29px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: .3s;
+}
+
+a:hover {
+    color: #ffff00bc;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar-links {
+    display:none;
+}
+
+.header-section {
+    padding: 10px 20px;
+    background-image: url('assets/bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 2%;
+}
+
+.header-body {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    padding-top:50px;
+    text-align: center;
+}
+
+.header-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.header-footer div a h2 {
+    font-weight: 300;
+}
+
+.bi-arrow-right {
+    display: none;
+}
+
+.custom-hr {
+    margin: 0 20px;
+    opacity: 0.8;
+    height:1.5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+.biography-section, .expertise-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:15px 20px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.aboutMe-section-section p {
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.biography-section div h1, .expertise-section div h1, .aboutMe-section-section h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.font-w-bold {
+    font-weight: 500;
+}
+
+.gallery-section {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:25px;
+}
+
+.expertise-section .button,.button {
+    padding:10px;
+    background-color: #121212;
+    color:white;
+    border: solid 1.5px white;
+}
+
+.expertise-section .button:hover, .button:hover {
+    background-color: white;
+    color: #121212;
+    border: solid 2px white;
+}
+
+.contact-section {
+    padding:30px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul>li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+footer {
+    padding: 10px 20px;
+    word-wrap: break-word;
+}
+
+#overlay {
+    height: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    overflow:hidden;
+    background-color: #121212;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: .3s;
+}
+
+.closebtn {
+    align-self: left;
+    width:40px;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border:none;
+    height:auto;
+}
+
+.overlay-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+    font-size: 30px;
+    top:25%;
+    align-self: center;
+}
+
+button, .toggle-menu {
+    cursor: pointer;
+}
+
+.responsive-image {
+    width: 100%;
+    height:auto;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap:15px;
+}
+
+.projects-section>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+a img {
+    transition: .2s;
+}
+
+a img:hover {
+    transform: scale(1.02);
+}
+
+.aboutMe-section {
+    padding: 15px 20px;
+}
+
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/* Medium Screens */
+@media screen and (min-width: 786px) {
+    body {
+        font-size: 20px;
+    }
+
+    .header-body {
+        font-size: 55px;
+        line-height: 60px;
+        padding-top: 55px;
+        text-align: center;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 22px;
+    }
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .toggle-menu {
+        display: none;
+    }
+    .header-body {
+        font-size: 100px;
+        max-width:800px;
+        line-height: 90px;
+        letter-spacing: 1.5px;
+        padding-top: 100px;
+        text-align: left;
+    }
+    .header-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .header-footer div a h2 {
+        font-weight: 300;
+    }
+
+    .bi-arrow-right {
+        display: inline-block;
+    }
+
+    .bi-arrow-down {
+        display: none;
+    }
+
+    .biography-section,
+    .expertise-section {
+        flex-direction: row;
+        gap: 20px;
+        padding: 15px 20px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .gallery-section {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .custom-hr-short {
+        width:400px;
+        margin-top:10px;
+    }
+
+    .expertise-section {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .ul-container {
+        margin-top:20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width:60%;
+    }
+
+    .contact-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom:30px;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:10px;
+    }
+
+    .projects-section>div:first-child {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .aboutMe-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    .aboutMe-section>div:first-child {
+       min-width:45%;
+       display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .aboutMe-section div .responsive-image {
+        height: auto;
+        width:100%;
+    }
+
+    .aboutMe-section-section {
+        padding-bottom:12px;
+    }
+
+
+}
+
+/* Larger screens */
+@media screen and (min-width: 1280px) {
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.social a, .email {
+    color: #ffff00bc;
+}
